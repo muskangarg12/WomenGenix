@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+        <!--<link rel="stylesheet" href="css/icon-font.css">-->
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="img/logo-removebg-preview.png">
+        
+        <title>Services</title>
+    </head>
+
+    <body>
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+
+            <div class="navigation__background">&nbsp;</div>
+
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="/index.html" class="navigation__link"><span>01</span>Home</a></li>
+                    <li class="navigation__item"><a href="/services.html" class="navigation__link"><span>01</span>Services</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Popular tours</a></li>
+                    <li class="navigation__item"><a href="/opportunities.html" class="navigation__link"><span>04</span>Opportunities</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Book now</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <header class="header" style="height: 15vh;">
+            <div class="header__logo-box" style="top: 0; left: 0;">
+                <img src="img/logo-removebg-preview.png" alt="Logo" class="header__logo" style="height: 10%;"> 
+            </div>
+
+        </header>
+
+        <main>
+
+            <section class="section-stories">
+                <div class="bg-video">
+                    <video class="bg-video__content" autoplay muted loop>
+                        <source src="img/video.mp4" type="video/mp4">
+                        <source src="img/video.webm" type="video/webm">
+                        Your browser is not supported!
+                    </video>
+                </div>
+
+                <div class="u-center-text u-margin-bottom-big">
+                    <h2 class="heading-secondary">
+                        We make people genuinely happy
+                    </h2>
+                </div>
+
+                <div class="row">
+                    <div class="story">
+                        <figure class="story__shape">
+                            <img src="img/nat-8.jpg" alt="Person on a tour" class="story__img">
+                            <figcaption class="story__caption">Mary Smith</figcaption>
+                        </figure>
+                        <div class="story__text">
+                            <h3 class="heading-tertiary u-margin-bottom-small">I had the best week ever with my family</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur
+                                ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero
+                                repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="u-center-text u-margin-top-huge" id="anchor">
+                    <a href="#" class="btn-text">See all services &rarr;</a>
+                </div>
+            </section>
+
+            <section class="section-book">
+                <div class="row">
+                    <div class="book">
+                        <div class="book__form">
+                            <form action="#" class="form">
+                                <div class="u-margin-bottom-medium">
+                                    <h2 class="heading-secondary">
+                                        Start booking now
+                                    </h2>
+                                </div>
+
+                                <div class="form__group">
+                                    <input type="text" class="form__input" placeholder="Full name" id="fname">
+                                    <label for="name" class="form__label">Full name</label>
+                                </div>
+
+                                <div class="form__group">
+                                    <input type="email" class="form__input" placeholder="Email address" id="email">
+                                    <label for="email" class="form__label">Contact Information</label>
+                                </div>
+
+                                <div class="form__group">
+                                    <textarea type="text" class="form__input" placeholder="Information about your service" id="info"></textarea>
+                                </div>
+
+                                <div class="form__group" onclick="myFunction()">
+                                    <button class="btn btn--green">Submit &rarr;</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__logo-box">
+                <picture class="footer__logo">
+                    <img alt="Full logo" src="img/logo-removebg-preview.png">
+                </picture>
+                <br />
+                <a href="#" class="footer__link">&copy; 2021</a>
+            </div>
+            <div class="row">
+                <div class="col-1-of-2">
+                    <div class="footer__navigation">
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#" class="footer__link">Contact us</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">About</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-1-of-2">
+                    <p class="footer__copyright">
+                        Built by <a href="#" class="footer__link">Harshit</a> and <a href="#" class="footer__link">Muskan</a> 
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            function myFunction() {
+                fname = document.getElementById("fname").value;
+                email = document.getElementById("email").value;
+                info = document.getElementById("info").value;
+                fname.value = ""
+                email.value = ""
+                info.value = ""
+
+                anchor = document.getElementById("anchor");
+                newDiv = document.createElement("div");
+                newDiv.className = "row"
+                html = `                    
+                    <div class="story" style="display: flex;">
+                        <figure class="story__shape">
+                            <img src="img/nat-8.jpg" alt="Person on a tour" class="story__img">
+                            <figcaption class="story__caption">Mary Smith</figcaption>
+                        </figure>
+                        <div class="story__text">
+                            <h3 class="heading-tertiary u-margin-bottom-small">${fname} <br /> ${email} </h3>
+                            <p>
+                                ${info}
+                            </p>
+                        </div>
+                    </div>
+`
+                newDiv.innerHTML=html;
+
+                anchor.parentNode.insertBefore(newDiv, anchor);
+
+
+            }
+        </script>        
+
+    </body>
+</html>
