@@ -90,7 +90,7 @@
                 <div class="row">
                     <div class="book">
                         <div class="book__form">
-                            <form action="#" class="form">
+                            <form action="#" class="form" id="myForm">
                                 <div class="u-margin-bottom-medium">
                                     <h2 class="heading-secondary">
                                         Start booking now
@@ -111,6 +111,11 @@
                                     <textarea type="text" class="form__input" placeholder="Information about your service" id="info"></textarea>
                                 </div>
 
+                                <div class="form__group">
+                                    <input type="text" class="form__input" placeholder="Enter your image url" id="imurl">
+                                    <label for="name" class="form__label">Image</label>
+                                </div>
+                                
                                 <div class="form__group" onclick="myFunction()">
                                     <button class="btn btn--green">Submit &rarr;</button>
                                 </div>
@@ -148,12 +153,22 @@
 
         <script>
             function myFunction() {
+
+                var form = document.getElementById("myForm");
+                function handleForm(event) { 
+                    event.preventDefault(); 
+                } 
+                form.addEventListener('submit', handleForm);
+
+
                 fname = document.getElementById("fname").value;
                 email = document.getElementById("email").value;
                 info = document.getElementById("info").value;
+                imurl = document.getElementById("imurl").value;
                 fname.value = ""
                 email.value = ""
                 info.value = ""
+                imurl.value = ""
 
                 anchor = document.getElementById("anchor");
                 newDiv = document.createElement("div");
@@ -161,8 +176,8 @@
                 html = `                    
                     <div class="story" style="display: flex;">
                         <figure class="story__shape">
-                            <img src="img/nat-8.jpg" alt="Person on a tour" class="story__img">
-                            <figcaption class="story__caption">Mary Smith</figcaption>
+                            <img src="${imurl}" alt="Person on a tour" class="story__img">
+                            <figcaption class="story__caption">${fname}</figcaption>
                         </figure>
                         <div class="story__text">
                             <h3 class="heading-tertiary u-margin-bottom-small">${fname} <br /> ${email} </h3>

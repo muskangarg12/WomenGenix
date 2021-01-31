@@ -116,7 +116,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, #e6a2e2, #bf20ce);
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: .2rem;
@@ -274,7 +274,7 @@ body {
       .card__side--back-1 {
         background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
       .card__side--back-2 {
-        background-image: linear-gradient(to right bottom, #e6a2e2, #bf20ce); }
+        background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
       .card__side--back-3 {
         background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
   .card:hover .card__side--front {
@@ -292,7 +292,7 @@ body {
     .card__picture--1 {
       background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(https://www.lendio.com/wp-content/uploads/2019/04/woman-working-at-desk-e1554754407333-800x501.jpg?p=89588); }
     .card__picture--2 {
-      background-image: linear-gradient(to right bottom, #e6a2e2, #bf20ce), url(https://static.businessworld.in/article/article_extra_large_image/1590137366_nLDrUp_laptop_macbook_computer_work.jpg); }
+      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(https://static.businessworld.in/article/article_extra_large_image/1590137366_nLDrUp_laptop_macbook_computer_work.jpg); }
     .card__picture--3 {
       background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(https://static.toiimg.com/photo/74771645.cms); }
   .card__heading {
@@ -312,7 +312,7 @@ body {
     .card__heading-span--1 {
       background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
     .card__heading-span--2 {
-      background-image: linear-gradient(to right bottom, rgba(230, 162, 226, 0.85), rgba(191, 32, 206, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(126,213,111,0.85), rgba(40,180,133,0.85)); }
     .card__heading-span--3 {
       background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
   .card__details {
@@ -435,7 +435,7 @@ body {
     font-size: 6rem;
     margin-bottom: .5rem;
     display: inline-block;
-    background-image: linear-gradient(to right, #e6a2e2, #bf20ce);
+    background-image: linear-gradient(to right, #7ed56f, #28b485);
     -webkit-background-clip: text;
     color: transparent; }
     @media only screen and (max-width: 56.25em) {
@@ -759,7 +759,7 @@ body {
 
 .header {
   height: 85vh;
-  background-image: linear-gradient(to right bottom, rgba(230, 162, 226, 0.8), rgba(191, 32, 206, 0.8)), url(https://wire19.com/wp-content/uploads/2019/12/Best-places-to-work-for-women-in-2019-2100x1200.png);
+  background-image: linear-gradient(to right bottom, rgba(126,213,111,0.8), rgba(40,180,133,0.8)), url(https://wire19.com/wp-content/uploads/2019/12/Best-places-to-work-for-women-in-2019-2100x1200.png);
   background-size: cover;
   background-position: top;
   position: relative; }
@@ -770,7 +770,7 @@ body {
       height: 95vh; } }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .header {
-      background-image: linear-gradient(to right bottom, rgba(230, 162, 226, 0.8), rgba(191, 32, 206, 0.8)), url(../img/hero.jpg); } }
+      background-image: linear-gradient(to right bottom, rgba(126,213,111,0.8), rgba(40,180,133,0.8)), url(../img/hero.jpg); } }
   @media only screen and (max-width: 37.5em) {
     .header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
@@ -819,7 +819,7 @@ body {
   position: fixed;
   top: 6.5rem;
   right: 6.5rem;
-  background-image: radial-gradient(#e6a2e2, #bf20ce);
+  background-image: radial-gradient(#7ed56f, #28b485);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
   @media only screen and (max-width: 56.25em) {
@@ -925,7 +925,7 @@ body {
 
 .section-features {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(230, 162, 226, 0.8), rgba(191, 32, 206, 0.8)), url(https://previews.123rf.com/images/sorrapongs/sorrapongs1708/sorrapongs170800054/84424895-new-generation-business-woman-is-working-with-a-notebook-asian-woman-are-happily-working-in-the-offi.jpg);
+  background-image: linear-gradient(to right bottom, rgba(126,213,111,0.8), rgba(40,180,133,0.8)), url(https://previews.123rf.com/images/sorrapongs/sorrapongs1708/sorrapongs170800054/84424895-new-generation-business-woman-is-working-with-a-notebook-asian-woman-are-happily-working-in-the-offi.jpg);
   background-size: cover;
   transform: skewY(-7deg);
   margin-top: -10rem; }
@@ -952,7 +952,7 @@ body {
 
 .section-book {
   padding: 15rem 0;
-  background-image: linear-gradient(to right bottom, #e6a2e2, #bf20ce); }
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
   @media only screen and (max-width: 56.25em) {
     .section-book {
       padding: 10rem 0; } }
